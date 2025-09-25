@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #fff5f7;
 }
 
 .page-container {
@@ -11,20 +11,21 @@ body {
     margin: 0 auto;
     background: white;
     min-height: 100vh;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.2);
 }
 
 .header {
-    background: #333;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
     color: white;
     padding: 20px;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .nav {
-    background: #666;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
     padding: 10px 0;
 }
 
@@ -44,14 +45,15 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    border-radius: 25px;
+    transition: all 0.3s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    background: #333;
+    background: rgba(255, 255, 255, 0.2);
     font-weight: bold;
+    transform: translateY(-2px);
 }
 
 .content {
@@ -60,7 +62,7 @@ body {
 }
 
 .footer {
-    background: #333;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
     color: white;
     text-align: center;
     padding: 20px;
@@ -74,32 +76,35 @@ body {
 }
 
 .profile-title {
-    color: #333;
+    color: #ff69b4;
     margin-bottom: 20px;
 }
 
 .profile-photo {
     max-width: 400px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 20px 0;
+    border: 5px solid #ffb6c1;
+    box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
 }
 
 .profile-name {
-    color: #333;
+    color: #ff1493;
     margin: 10px 0;
 }
 
 .profile-group {
-    color: #666;
+    color: #ff69b4;
     font-size: 1.1em;
 }
 
 .about-me {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px 0;
+    border-left: 5px solid #ff69b4;
 }
 
 .skills-section {
@@ -107,8 +112,8 @@ body {
 }
 
 .section-title {
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: #ff1493;
+    border-bottom: 3px solid #ffb6c1;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -121,11 +126,12 @@ body {
 }
 
 .skill-tag {
-    background: #333;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
 }
 
 .experience-section {
@@ -133,15 +139,16 @@ body {
 }
 
 .experience-card {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 15px 0;
-    border-left: 4px solid #333;
+    border-left: 5px solid #ff69b4;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
 }
 
 .experience-title {
-    color: #333;
+    color: #ff1493;
     margin-bottom: 10px;
 }
 
@@ -153,7 +160,7 @@ body {
 /* Стили для страниц */
 .page-title {
     text-align: center;
-    color: #333;
+    color: #ff1493;
     margin-bottom: 30px;
     font-size: 2em;
 }
@@ -166,20 +173,25 @@ body {
 }
 
 .news-card {
-    background: white;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-left: 4px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    border-left: 5px solid #ff69b4;
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-3px);
 }
 
 .news-title {
-    color: #333;
+    color: #ff1493;
     margin-bottom: 10px;
 }
 
 .news-date {
-    color: #666;
+    color: #ff69b4;
     font-size: 0.9em;
     margin-bottom: 10px;
 }
@@ -197,13 +209,14 @@ body {
 }
 
 .contact-info {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    border-left: 5px solid #ff69b4;
 }
 
 .contact-info h3 {
-    color: #333;
+    color: #ff1493;
     margin-bottom: 15px;
 }
 
@@ -213,13 +226,14 @@ body {
 }
 
 .contact-form {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    border-left: 5px solid #ff69b4;
 }
 
 .contact-form h3 {
-    color: #333;
+    color: #ff1493;
     margin-bottom: 15px;
 }
 
@@ -232,24 +246,27 @@ body {
 .contact-form input,
 .contact-form textarea {
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
     font-size: 1em;
+    background: white;
 }
 
 .contact-form button {
-    background: #333;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
     color: white;
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1em;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
 }
 
 .contact-form button:hover {
-    background: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.4);
 }
 
 /* Практики */
@@ -260,15 +277,20 @@ body {
 }
 
 .practice-card {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-left: 4px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    border-left: 5px solid #ff69b4;
+    transition: transform 0.3s;
+}
+
+.practice-card:hover {
+    transform: translateY(-3px);
 }
 
 .practice-card h3 {
-    color: #333;
+    color: #ff1493;
     margin-bottom: 10px;
 }
 
@@ -296,22 +318,22 @@ body {
 }
 
 .product-card {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid #ddd;
+    box-shadow: 0 8px 16px rgba(255, 105, 180, 0.2);
+    transition: all 0.3s;
+    border: 3px solid #ffb6c1;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(255, 105, 180, 0.3);
 }
 
 .product-card h3 {
-    color: #333;
+    color: #ff1493;
     margin-bottom: 10px;
     font-size: 1.3em;
 }
@@ -326,33 +348,35 @@ body {
     max-width: 200px;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 15px 0;
-    border: 3px solid #ddd;
+    border: 4px solid #ffb6c1;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
 }
 
 .price {
     display: block;
     font-weight: bold;
-    color: #333;
-    font-size: 1.2em;
+    color: #ff1493;
+    font-size: 1.3em;
     margin: 15px 0;
 }
 
 .product-card button {
-    background: #333;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
     color: white;
     padding: 12px 30px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 1em;
-    transition: background 0.3s, transform 0.2s;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
 }
 
 .product-card button:hover {
-    background: #555;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.4);
 }
 
 /* Адаптивность */
@@ -386,5 +410,6 @@ body {
 /* Активная ссылка в навигации */
 .nav-link.active {
     font-weight: bold;
-    background: #444;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
 }
